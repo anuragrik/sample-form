@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Posición - Get Football News</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="part1">
+        <div class="logoclass">
+            <img class="logoimage" src="images\odin-lined.png" alt="odin-logo">
+            <div class="jdptext">JDP</div>
+        </div>
+    </div>
+    <div class="part2">
+        <div class="main-text">
+            <p>
+                Welcome to Juego de Posición. You know you need something<br>
+                like this in your life to help you realize your deepest dreams.<br>Sign up <span>now</span> to get started.
+                <p>You <span>know</span> you want to.</p>
+            </p>
+        </div>
+        <div class="form-body">
+            <form action="/action_page.php" method="get">
+                    <div class="formbgcolor">
+                        <h3>Let's do this!</h3>
+                        <div class="item">
+                            <label for="firstname" class="lb_firstname">FIRST NAME</label>
+                            <input type="text" id="firstname" name="firstname" required>
+                        </div>
+                        <div class="item">
+                            <label for="lastname" class="lb_lastname">LAST NAME</label>
+                            <input type="text" id="lastname" name="lastname" required>
+                        </div>
+                        <div class="item">
+                            <label for="mail" class="lb_mail">EMAIL</label>
+                            <input type="email" id="mail" name="email" required>
+                        </div>
+                        <div class="item">
+                            <label for="phone" class="lb_phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phonenumber" pattern="\d{10}" required>
+                        </div>
+                        <div class="item">
+                            <label for="pwd" class="lb_pwd">PASSWORD</label>
+                            <input class="pwd-field" type="password" id="pwd" name="password" required>
+                            <div class="error-msg"></div>
+                        </div>
+                        <div class="item">
+                            <label for="confirm-pwd" class="lb_confirmpwd">CONFIRM PASSWORD</label>
+                            <input class="pwd-field-checker" type="password" id="confirm-pwd" name="confirmpassword" required>
+                        </div>
+                    </div>
+                <button type="submit" class="submit-button">Create Account</button>
+            </form>
+            <div class="login">
+                Already have an account?<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> Log in</a>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
